@@ -57,8 +57,8 @@ async function engage(inputsArray) {
   }, 500);
 
   function like() {
+    likeBtns = Object.values(likeBtns);
     for (let i = 0; i < parseInt(inputsArray[0]); i++) {
-      likeBtns = Object.values(likeBtns);
       let randomNum = Math.floor(Math.random() * likeBtns.length);
       let likeBtn = likeBtns.splice(randomNum, 1);
       likeBtn[0].click();
@@ -66,8 +66,8 @@ async function engage(inputsArray) {
   }
   async function comment() {
     let commentText = "CFBR";
+    commentBtns = Object.values(commentBtns);
     for (let i = 0; i < parseInt(inputsArray[1]); i++) {
-      commentBtns = Object.values(commentBtns);
       let randomNum = Math.floor(Math.random() * commentBtns.length);
       let commentBtn = commentBtns.splice(randomNum, 1);
       commentBtn[0].click();

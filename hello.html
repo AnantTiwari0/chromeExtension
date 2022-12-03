@@ -1,0 +1,37 @@
+<html>
+    <style>
+        body{
+          width: max-content;
+        }
+        .button{
+          padding: 5px;
+          background-color: rgb(29, 93, 98);
+          cursor: pointer;
+          color: white;
+          margin: auto;
+          display: block;
+        }
+        .inputArea{
+          display: flex;
+          justify-content: space-evenly;
+          margin-bottom: 10px;
+        }
+        .button:disabled{
+          background-color: rgb(117, 110, 125);
+        }
+
+    </style>
+  <body>
+    <h1>Basic Extensions from Anant Tiwari</h1>
+    <!-- Previous task (2) -->
+    <!-- <button id="showTitle" class="button">Show title</button>
+    <button id="profiles" class="button">Show Profiles</button> -->
+    <div class="inputArea">
+      <input type="number" id="count" placeholder="Enter the number of likes">
+      <input type="number" id="commentCount" placeholder="Enter the number of comments">
+    </div>
+    <button id="autoEngage" class="button" disabled >Engage</button>
+    <!-- <script src="popup.js"></script> -->
+    <script src="index.js"></script>
+  </body>
+</html>

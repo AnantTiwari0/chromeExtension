@@ -1,4 +1,4 @@
-console.log("should see only this form extension");
+// task 3 
 let mainBtn = document.getElementById("autoEngage");
 mainBtn.addEventListener("click", function () {
   if (!mainBtn.disabled) {
